@@ -28,7 +28,10 @@ public class Main {
         Person<Person> person2 = new Person<Person>();
         Person<Person> person1 = new Person<Person>();
         Person[] list4 = {person1, person2};
-        System.out.println(minValue(list4));
+        // System.out.println(minValue(list4));
+
+        Animal animal3 = new Animal();
+        Animal animal4 = new Animal();
 
     }
     public static <T> void wypisz(T value){
@@ -56,5 +59,13 @@ public class Main {
         }
         return smallest;
     }
+    public static <T extends Animal> Animal findMax(T element1, T element2){
+        if (element1.wiek > element2.wiek) {
+            return element1;
+        }
+        return element2;
+    }
+
+    public static <T> tree
 
 }
